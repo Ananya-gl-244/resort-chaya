@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resort Room</title>
+    <style>
+      body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:#fff8f0;
+    color: #333;
+}
+
+/* Header styling */
+.header {
+    background-color: #fff; /* Dark background for the header */
+    color: black;
+    padding: 15px 0;
+    position: fixed;
+    width:100%;
+    top:0;
+    z-index: 1000;
+    border-radius:30px;
+}
+
+/* Logo and title styling */
+.logo {
+    display: flex;
+    align-items: center;
+    
+}
+
+.logo img {
+    margin-right: 10px;
+    width:80px;
+}
+
+.title {
+    font-size: 1rem;
+    font-weight: 200;
+    color: #0b0b0b;
+    margin:0;
+    font-family:"Rye", serif;
+}
+
+/* Navigation styling */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color:black;
+    font-size: 16px;
+    padding: 5px 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    height: 25px;
+}
+
+.header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+.header .logo img {
+    width: 60px;
+    height: 60px;
+}
+
+.header ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.header ul li {
+    margin-right: 20px;
+    display: flex; 
+    align-items: center; 
+}
+
+nav ul li a:hover {
+  border:none;
+    background-color: black;
+    color:white;
+    padding: 8px;
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav ul li {
+        display: block;
+    }
+}
+   
+
+
+/* Room Container Styles */
+.room-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    margin: 30px;
+    margin-top: 100px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height:50%;
+}
+
+.room-image {
+    flex: 1 1 300px;
+    max-width: 100%;
+    margin-right: 20px;
+}
+
+.room-image img {
+    width: 100%;
+    height: 60%;
+    border-radius: 10px;
+}
+
+.room-details {
+    flex: 1 1 300px;
+    max-width: 100%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.room-details h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.room-details p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.room-details button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.room-details button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+
+
+    .room-container {
+        flex-direction: column;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .room-image {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .room-details {
+        padding: 15px;
+    }
+
+    .room-details h2 {
+        font-size: 22px;
+    }
+
+    .room-details p {
+        font-size: 14px;
+    }
+
+    .room-details button {
+        width: 100%;
+        padding: 12px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    
+    .room-details h2 {
+        font-size: 20px;
+    }
+
+    .room-details p {
+        font-size: 12px;
+    }
+
+    .room-details button {
+        font-size: 12px;
+    }
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <nav>
+            <div class="logo">
+                <a href="index.php"><img src="chaya.png" alt="" width="80px" height="80px"></a>
+                <span class="title" >Chaya Resorts</span>
+            </div>
+    
+            <ul>
+            <li><a href="index.php">Home</a></li>
+            <li><a href="index.php#section2">About</a></li>
+            <li><a href="rooms.php">Rooms</a></li>
+            <li> <a href="#">Bookings</a></li>
+            <li> <a href="#">Contact</a></li>
+          </ul>
+        </nav>
+    </div>
+    <div class="room-container">
+        <div class="room-image">
+            <img src="SD1.jpg" alt="Resort Image">
+        </div>
+        <div class="room-details">
+            <h2>Standard Rooms</h2>
+            <p>Enjoy a luxurious stay with breathtaking views.</p>
+            <p>Price: ₹5,000 per night</p>
+            <p>Availability: Available</p>
+            <button onclick="window.location.href='booking-form.html'">Book Now</button>
+        </div>
+    </div>
+</body>
+</html>
